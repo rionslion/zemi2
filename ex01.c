@@ -6,7 +6,7 @@ int primeCheck(int a);
 int main(void){
   int n,i,num;
 
-  for(;;){
+  while(1){
     scanf("%d",&n);
     if(n == 0)break;
     
