@@ -108,7 +108,7 @@ void record(divnum num){
     n.child = -n.child;
   }
   
-  while(i < n.child && i < n.mother){
+  while(i <= n.child && i <= n.mother){
     if(n.child%i == 0 && n.mother%i == 0){
       n.child = n.child / i;
       n.mother = n.mother / i;
@@ -137,7 +137,7 @@ void print_record(void){
 
   for(i=0; i<count; i++){
     if(rec[i].mother != 1) printf("%4d/%-4d ",rec[i].child ,rec[i].mother);
-    else printf("%-9d ",rec[i].child);
+    else printf("%5d     ",rec[i].child);
     if(i%LINENUM==LINENUM-1) printf("\n");
   }
   printf("\n");
